@@ -21,8 +21,6 @@ body{
   background: blue;
   margin: .4%;
   color: white;
-  border-left: 0.5px solid black;
-  border-right: 0.5px solid black;
 }
 
 *{
@@ -30,22 +28,30 @@ body{
 }
 
 .col-1 {
+  height: 300px;
   width: 100%;
-  background-color: rgba(209, 38, 169, 0.8);
+  background-color: rgb(247, 234, 0);
 }
 
 .col-2 {
-  width: 49.6%;
-  background-color: rgba(156, 66, 209, 0.8);
+  width: 69.5%;
+  height: 300px;
+  background-color: rgb(52, 234, 169);
+}
+
+.col-3 {
+  height: 300px;
+  width: 28.6%;
+  background-color: rgb(228, 134, 234);
+}
+
+@media all and (max-width: 768px){
+  [class*=col-]{
+    width: 100%;
+  }
 }
 
 
-.margin-1 {
-  margin-left: 0;
-}
-.margin-2 {
-  margin-right: 0;
-}
 
 /*body{
   background: green;
